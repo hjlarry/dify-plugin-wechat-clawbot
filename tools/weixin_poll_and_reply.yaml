@@ -1,0 +1,26 @@
+identity:
+  author: hejl
+  name: weixin_send_message
+  label:
+    en_US: Send Message
+    zh_Hans: 发送消息
+description:
+  human:
+    en_US: After binding Weixin, send messages to Dify through Weixin ClawBot.
+    zh_Hans: 绑定微信后，通过微信ClawBot给 dify 发送消息。
+  llm: After binding Weixin, send incoming Weixin messages to Dify through Weixin ClawBot.
+parameters:
+  - name: app
+    label:
+      en_US: Dify Chat App
+      zh_Hans: Dify Chat App
+    human_description:
+      en_US: Select which Chat App should process Weixin messages.
+      zh_Hans: 选择用于处理微信消息的 Chat App。
+    type: app-selector
+    scope: chat
+    form: form
+    required: true
+extra:
+  python:
+    source: tools/weixin_poll_and_reply.py

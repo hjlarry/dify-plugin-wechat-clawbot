@@ -1,0 +1,5 @@
+path: "/weixin/login_qrcode"
+method: "GET"
+extra:
+  python:
+    source: "endpoints/login_qrcode.py"

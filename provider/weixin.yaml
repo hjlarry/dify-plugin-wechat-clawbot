@@ -1,0 +1,17 @@
+identity:
+  author: hejl
+  name: weixin_clawbot
+  label:
+    en_US: Weixin ClawBot
+    zh_Hans: 微信ClawBot
+  description:
+    en_US: After binding Weixin, send messages to Dify through Weixin ClawBot.
+    zh_Hans: 绑定微信后，通过微信ClawBot给 dify 发送消息。
+  icon: icon.jpg
+  tags:
+    - utilities
+extra:
+  python:
+    source: provider/weixin.py
+tools:
+  - tools/weixin_poll_and_reply.yaml
