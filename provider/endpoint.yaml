@@ -1,2 +1,36 @@
+settings:
+  - name: api_base_url
+    type: text-input
+    required: false
+    label:
+      en_US: API Base URL
+      zh_Hans: API 基础地址
+    default: https://ilinkai.weixin.qq.com
+    placeholder:
+      en_US: https://ilinkai.weixin.qq.com
+      zh_Hans: 请输入微信 iLink API 基础地址
+
+  - name: route_tag
+    type: text-input
+    required: false
+    label:
+      en_US: Route Tag
+      zh_Hans: 路由标签
+    default: ""
+    placeholder:
+      en_US: Optional SKRouteTag header value
+      zh_Hans: 可选的 SKRouteTag 请求头值
+
+  - name: bot_type
+    type: text-input
+    required: true
+    label:
+      en_US: Bot Type
+      zh_Hans: Bot 类型
+    default: "3"
+    placeholder:
+      en_US: "3"
+      zh_Hans: 默认填写 3
+
 endpoints:
   - endpoints/login_qrcode.yaml

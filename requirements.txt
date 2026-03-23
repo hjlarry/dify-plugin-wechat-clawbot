@@ -1,2 +1,3 @@
-dify_plugin==0.7.1
+dify_plugin==0.7.4
+httpx>=0.28.1,<0.29
 segno==1.6.6
