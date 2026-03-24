@@ -32,5 +32,15 @@ settings:
       en_US: "3"
       zh_Hans: 默认填写 3
 
+  - name: app
+    type: app-selector
+    scope: chat
+    required: true
+    label:
+      en_US: Dify Chat App
+      zh_Hans: Dify Chat App
+    placeholder:
+      en_US: Select the Chat App used to process Weixin messages
+      zh_Hans: 选择用于处理微信消息的 Chat App
 endpoints:
   - endpoints/login_qrcode.yaml
