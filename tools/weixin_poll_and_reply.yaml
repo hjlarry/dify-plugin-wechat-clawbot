@@ -1,14 +1,14 @@
 identity:
   author: hejl
-  name: weixin_send_message
+  name: weixin_poll_and_reply
   label:
-    en_US: Send Message
-    zh_Hans: 发送消息
+    en_US: Poll and Reply
+    zh_Hans: 轮询并回复
 description:
   human:
-    en_US: After binding Weixin, send messages to Dify through Weixin ClawBot.
-    zh_Hans: 绑定微信后，通过微信ClawBot给 dify 发送消息。
-  llm: After binding Weixin, send incoming Weixin messages to Dify through Weixin ClawBot.
+    en_US: Poll inbound Weixin text messages and reply with a selected Dify Chat App after login.
+    zh_Hans: 登录后轮询微信文本消息，并使用选定的 Dify Chat App 自动回复。
+  llm: Poll inbound Weixin text messages after login, send them to the selected Dify Chat App, and reply back to Weixin.
 parameters:
   - name: app
     label:

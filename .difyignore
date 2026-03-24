@@ -5,3 +5,7 @@ __pycache__/
 .pytest_cache/
 .ruff_cache/
 dist/
+.DS_Store
+pyproject.toml
+.vscode
+.env
